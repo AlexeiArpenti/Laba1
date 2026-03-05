@@ -1,0 +1,94 @@
+
+/* Изображение в карточке */
+/* Общий контейнер */
+.modes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px; /* Ограничим ширину для лучшего вида */
+    margin: 0 auto;
+}
+
+/* Карточка */
+.mode-card {
+    display: flex;
+    align-items: stretch; /* Растягивает контент и картинку по высоте самой высокой части */
+    background: rgba(1, 10, 19, 0.9);
+    border: 1px solid #5b5a56;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 200px; /* Минимальная высота, чтобы все карточки были солидными */
+}
+
+/* Изображение */
+.mode-card img {
+    width: 350px;      /* Фиксированная ширина для всех картинок */
+    min-width: 350px;  /* Чтобы флекс не сжимал картинку */
+    object-fit: cover; /* Картинка заполняет область, не растягиваясь (лишнее обрезается) */
+    border-right: 2px solid #c8aa6e;
+}
+
+/* Инфо-блок */
+.mode-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирует текст по вертикали относительно картинки */
+    flex-grow: 1; /* Занимает всё оставшееся пространство */
+}
+
+.mode-info h3 {
+    margin: 0 0 10px 0;
+    color: #c8aa6e;
+    font-size: 1.5rem;
+}
+
+.mode-info p {
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+    color: #e6e6e6;
+}
+
+/* Список характеристик в ряд */
+.mode-info ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Если экран узкий, плашки перенесутся */
+    gap: 15px;
+}
+
+.mode-info ul li {
+    background: rgba(200, 170, 110, 0.1);
+    padding: 6px 12px;
+    border: 1px solid rgba(200, 170, 110, 0.4);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #c8aa6e;
+}
+/* Текст в карточке */
+.mode-info {
+    padding: 20px;
+    flex: 1;
+}
+
+.mode-info h3 {
+    margin-top: 0;
+    color: #c8aa6e;
+}
+
+.mode-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 0.9em;
+    display: flex;
+    gap: 20px;
+}
+
+.mode-info ul li {
+    background: rgba(200, 170, 110, 0.1);
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(200, 170, 110, 0.3);
+}

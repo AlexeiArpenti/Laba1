@@ -1,0 +1,38 @@
+.champions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
+    gap: 25px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.champion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    background-color: rgba(17,24,39,0.8);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.champion:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #c8aa6e;
+}
+
+.champion img {
+    width: 80px;
+    height: 80px;
+    border-radius: 14px;
+}
+
+.champion p {
+    margin-top: 8px;
+    color: #c8aa6e;
+    font-weight: bold;
+}

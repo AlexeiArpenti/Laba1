@@ -1,0 +1,57 @@
+/* Основной контейнер для текста */
+.content-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(10, 15, 26, 0.6); /* Полупрозрачный темный фон для читаемости */
+    border: 1px solid #c8aa6e;        /* Тонкая золотая рамка */
+    border-radius: 8px;
+}
+
+/* Стили заголовков */
+h2, h3 {
+    color: #c8aa6e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Баннер */
+.main-banner {
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid #c8aa6e;
+}
+
+/* Таблица ролей */
+.roles-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(1, 10, 19, 0.8);
+}
+
+.roles-table th, .roles-table td {
+    border: 1px solid #5b5a56;
+    padding: 12px;
+    text-align: left;
+}
+
+.roles-table th {
+    background-color: #c8aa6e;
+    color: #091428;
+}
+
+/* Стили для ссылок в навигации, чтобы они не сливались */
+nav a {
+    color: #c8aa6e;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #c8aa6e;
+}
