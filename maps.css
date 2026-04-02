@@ -1,0 +1,94 @@
+
+/* Изображение в карточке */
+/* Общий контейнер */
+.modes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+/* Карточка */
+.mode-card {
+    display: flex;
+    align-items: stretch; 
+    background: rgba(1, 10, 19, 0.9);
+    border: 1px solid #5b5a56;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 200px; 
+}
+
+/* Изображение */
+.mode-card img {
+    width: 350px;      
+    min-width: 350px;  
+    object-fit: cover; 
+    border-right: 2px solid #c8aa6e;
+}
+
+/* Инфо-блок */
+.mode-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+.mode-info h3 {
+    margin: 0 0 10px 0;
+    color: #c8aa6e;
+    font-size: 1.5rem;
+}
+
+.mode-info p {
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+    color: #e6e6e6;
+}
+
+/* Список характеристик в ряд */
+.mode-info ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.mode-info ul li {
+    background: rgba(200, 170, 110, 0.1);
+    padding: 6px 12px;
+    border: 1px solid rgba(200, 170, 110, 0.4);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #c8aa6e;
+}
+/* Текст в карточке */
+.mode-info {
+    padding: 20px;
+    flex: 1;
+}
+
+.mode-info h3 {
+    margin-top: 0;
+    color: #c8aa6e;
+}
+
+.mode-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 0.9em;
+    display: flex;
+    gap: 20px;
+}
+
+.mode-info ul li {
+    background: rgba(200, 170, 110, 0.1);
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(200, 170, 110, 0.3);
+}

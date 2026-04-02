@@ -1,0 +1,89 @@
+/* Контейнер */
+.tierlist-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+/* Меню ролей */
+.role-filter-menu {
+    display: flex;
+    justify-content: center;
+    background: #282d3c;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.role-filter-menu button {
+    flex: 1;
+    background: none;
+    border: none;
+    color: #a0a5b1;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.role-filter-menu button.active, 
+.role-filter-menu button:hover {
+    background: #5383e8; /* Синий акцент как на скриншоте */
+    color: white;
+}
+
+/* Таблица */
+.tier-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(40, 45, 60, 0.9);
+    color: #e6e6e6;
+    font-size: 0.9rem;
+}
+
+.tier-table th {
+    background: #313748;
+    color: #7b818f;
+    padding: 12px;
+    text-align: left;
+    font-weight: normal;
+    border-bottom: 1px solid #3d4354;
+}
+
+.tier-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #3d4354;
+}
+
+/* Инфо о чемпионе */
+.champ-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.champ-info img {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+
+/* Тир-бейджи */
+.tier-badge {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+}
+
+.s-tier { background: #00b0f0; } /* Тир 1 - голубой */
+.a-tier { background: #00d6b3; } /* Тир 2 - зеленый */
+
+/* Ховер строки */
+.tier-table tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}

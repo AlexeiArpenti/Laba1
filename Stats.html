@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Stats - Sherlock2000#000</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/stats.css">
+    <script src="JavaScript/Stats.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Статистика призывателя</h1>
+    <nav>
+        <a href="glavnaia.html">Главная</a>
+        <a href="Characters.html">Персонажи</a>
+        <a href="Stats.html">Статистика</a>
+        <a href="Maps.html">Режимы игры</a>
+        <a href="tierlist.html">Тир лист</a>
+    </nav>
+</header>
+
+<div class="stats-card calculator-card">
+    <h3>Калькулятор винрейта</h3>
+    <div class="calc-inputs">
+        <div class="input-group">
+            <label for="wins">Победы</label>
+            <input type="number" id="wins" value="0" min="0" oninput="calculateWinrate()">
+        </div>
+        <div class="input-group">
+            <label for="losses">Поражения</label>
+            <input type="number" id="losses" value="0" min="0" oninput="calculateWinrate()">
+        </div>
+    </div>
+    <div class="calc-result">
+        <span>Ваш винрейт:</span>
+        <span id="wr-result">0%</span>
+    </div>
+<main class="content-container">
+<section class="profile-header">
+    <div class="profile-icon">
+        <img src="https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon6694.jpg" alt="Icon">
+        <span class="level">778</span>
+    </div>
+    <div class="profile-info">
+        <h2>Sherlock2000 <span class="tagline">#000</span></h2>
+        <p>Регион: RU | <span style="color: #c8aa6e;">Fan of T1</span></p>
+    </div>
+</section>
+
+<div class="stats-grid">
+    <div class="stats-card rank-card">
+        <h3>Одиночная очередь</h3>
+        <img src="https://opgg-static.akamaized.net/images/medals_new/emerald.png" alt="Emerald Rank" class="rank-img">
+        <div class="rank-text">
+            <p class="rank-title">EMERALD II</p>
+            <p>72 LP / 20W 13L</p>
+            <p class="winrate">Винрейт: <span style="color: #10b981;">60.6%</span></p>
+        </div>
+    </div>
+
+    <div class="stats-card general-stats">
+        <h3>Мастерство</h3>
+        <div class="stat-row">
+            <span>Общий счет мастерства</span>
+            <span class="stat-value">1,019</span>
+        </div>
+        <div class="stat-row">
+            <span>Очки чемпионов (всего)</span>
+            <span class="stat-value">6,807,756</span>
+        </div>
+        <div class="stat-row">
+            <span>Место в ладдере (RU)</span>
+            <span class="stat-value">#9,639</span>
+        </div>
+    </div>
+</div>
+
+<section class="best-champions">
+    <h3>Лучшие чемпионы (Мастерство)</h3>
+    <div class="champ-mini-list">
+        <div class="champ-item">
+            <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Jinx.png" alt="Jinx">
+            <div class="champ-details">
+                <p><strong>Jinx</strong></p>
+                <p>449,345 pts (Ур. 43)</p>
+            </div>
+        </div>
+        <div class="champ-item">
+            <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Jhin.png" alt="Jhin">
+            <div class="champ-details">
+                <p><strong>Jhin</strong></p>
+                <p>334,435 pts (Ур. 33)</p>
+            </div>
+        </div>
+        <div class="champ-item">
+            <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Yasuo.png" alt="Yasuo">
+            <div class="champ-details">
+                <p><strong>Yasuo</strong></p>
+                <p>276,193 pts (Ур. 26)</p>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>League of Legends - Тир лист</title>
+    <link rel="stylesheet" href="Css/style.css"> 
+    <link rel="stylesheet" href="Css/tierlist.css">
+</head>
+<body>
+
+<header>
+    <h1>Тир лист</h1>
+    <nav>
+        <a href="glavnaia.html">Главная</a>
+        <a href="Characters.html">Персонажи</a>
+        <a href="Stats.html">Статистика</a>
+        <a href="Maps.html">Режимы игры</a>
+        <a href="tierlist.html">Тир лист</a>
+    </nav>
+</header>
+
+<main class="tierlist-container">
+    <div class="role-filter-menu">
+        <button id="defaultOpen" class="active" onclick="filterRole('top')">TOP</button>
+        <button onclick="filterRole('jungle')">JUNGLE</button>
+        <button onclick="filterRole('mid')">MID</button>
+        <button onclick="filterRole('adc')">ADC</button>
+        <button onclick="filterRole('support')">SUPPORT</button>
+    </div>
+
+    <table class="tier-table">
+        <thead>
+            <tr>
+                <th>Ранг</th>
+                <th>Чемпион</th>
+                <th>Тир</th>
+                <th>Винрейт</th>
+                <th>Популярность</th>
+                <th>Банрейт</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="role-row top">
+                <td>1</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Garen.png" alt="Garen">
+                        <span>Гарен</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>52.2%</td>
+                <td>8.47%</td>
+                <td>5.81%</td>
+            </tr>
+            <tr class="role-row top">
+                <td>2</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Fiora.png" alt="Fiora">
+                        <span>Фиора</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row top">
+                <td>3</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Shen.png" alt="Shen">
+                        <span>Шен</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row top">
+                <td>4</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Ornn.png" alt="Ornn">
+                        <span>Орн</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">2</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row top">
+                <td>5</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Darius.png" alt="Darius">
+                        <span>Дариус</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">2</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row mid">
+                <td>1</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Ahri.png" alt="Ahri">
+                        <span>Ари</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row mid">
+                <td>2</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Katarina.png" alt="Katarina">
+                        <span>Катарина</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row mid">
+                <td>3</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Xerath.png" alt="Xerath">
+                        <span>Зерат</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row mid">
+                <td>4</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Vex.png" alt="Vex">
+                        <span>Векс</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">2</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row mid">
+                <td>5</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Viktor.png" alt="Viktor">
+                        <span>Виктор</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">2</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row adc">
+                <td>1</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Jinx.png" alt="Jinx">
+                        <span>Джинкс</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row adc">
+                <td>2</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Ashe.png" alt="Ashe">
+                        <span>Эш</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row adc">
+                <td>3</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Swain.png" alt="Swain">
+                        <span>Свейн</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">2</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row adc">
+                <td>4</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Karthus.png" alt="Karthus">
+                        <span>Картус</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">2</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row adc">
+                <td>5</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/KogMaw.png" alt="KogMaw">
+                        <span>Ког'Mao</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">2</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+
+            <tr class="role-row support">
+                <td>1</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Thresh.png" alt="Thresh">
+                        <span>Треш</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row support">
+                <td>2</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Nami.png" alt="Nami">
+                        <span>Нами</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row support">
+                <td>3</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Leona.png" alt="Leona">
+                        <span>Леона</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row support">
+                <td>4</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Bard.png" alt="Bard">
+                        <span>Бард</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row support">
+                <td>5</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Sona.png" alt="Sona">
+                        <span>Сона</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row jungle">
+                <td>1</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/LeeSin.png" alt="LeeSin">
+                        <span>Ли Син</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row jungle">
+                <td>2</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Gwen.png" alt="Gwen">
+                        <span>Гвен</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">1</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row jungle">
+                <td>3</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Nocturne.png" alt="Nocturne">
+                        <span>Ноктюрн</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">2</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row jungle">
+                <td>4</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Briar.png" alt="Briar">
+                        <span>Брайер</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">2</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            <tr class="role-row jungle">
+                <td>5</td>
+                <td>
+                    <div class="champ-info">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/JarvanIV.png" alt="JarvanIV">
+                        <span>Джарван IV</span>
+                    </div>
+                </td>
+                <td><span class="tier-badge s-tier">2</span></td>
+                <td>51.5%</td>
+                <td>12.3%</td>
+                <td>4.2%</td>
+            </tr>
+            </tbody>
+    </table>
+</main>
+
+<script src="JavaScript/tierlist.js"></script>
+</body>
+</html>
