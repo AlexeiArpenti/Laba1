@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание аккаунта - League of Legends</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/lolicon.png') }}" type="image/png">
+    <link rel="stylesheet" href="static/Css/style.css">
+    <link rel="stylesheet" href="static/Css/Reg.css">
+    <link rel="stylesheet" href="static/Css/auth.css">
+</head>
+<body class="auth-page">
+
+<div class="register-container">
+    <div class="register-card">
+        <div class="logo-container">
+            <img src="static/images/lolicon.png" alt="LoL Logo">
+        </div>
+        
+        <h2>Присоединяйся к битве</h2>
+        <p class="subtitle">Создай аккаунт, чтобы отслеживать свой прогресс</p>
+
+<!-- Форма регистрации -->
+<form id="registerForm">
+    <h2>Регистрация в League Stats</h2>
+    
+    <!-- Новое поле: Email -->
+    <input type="email" id="reg-email" placeholder="Электронная почта" required>
+    
+    <!-- Логин -->
+    <input type="text" id="reg-user" placeholder="Придумайте логин" required>
+    
+    <!-- Пароли -->
+    <input type="password" id="reg-pass" placeholder="Пароль" required>
+    <input type="password" id="reg-pass-confirm" placeholder="Подтвердите пароль" required>
+    
+    <button type="submit">Создать аккаунт</button>
+    <p>Уже есть аккаунт? <a href="/login">Войти</a></p>
+</form>
+
+<script src="static/JavaScript/Register.js"></script>
+</body>
+</html>

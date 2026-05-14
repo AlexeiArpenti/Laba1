@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Stats - Sherlock2000#000</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/lolicon.png') }}" type="image/png">
+    <link rel="stylesheet" href="static/Css/style.css">
+    <link rel="stylesheet" href="static/Css/stats.css">
+    <script src="static/JavaScript/Stats.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Статистика призывателя</h1>
+    <nav>
+        <a href="/glavnaia">Главная</a>
+        <a href="/characters">Персонажи</a>
+        <a href="/stats">Статистика</a>
+        <a href="/maps">Режимы игры</a>
+        <a href="/tierlist">Тир лист</a>
+    </nav>
+</header>
+
+<section class="calculator-section">
+    <div class="stats-card calculator-card">
+        <h3>Калькулятор винрейта</h3>
+        <div class="calc-inputs">
+            <div class="input-group">
+                <label for="wins">Победы</label>
+                <input type="number" id="wins" value="0" min="0" oninput="calculateWinrate()">
+            </div>
+            <div class="input-group">
+                <label for="losses">Поражения</label>
+                <input type="number" id="losses" value="0" min="0" oninput="calculateWinrate()">
+            </div>
+        </div>
+        <div class="calc-result">
+            <span>Ваш винрейт:</span>
+            <span id="wr-result">0%</span>
+        </div>
+    </div>
+</section>
+
+<main class="content-container">
+    
+    <div id="guest-view" style="display: block; text-align: center;">
+        <div class="login-prompt">
+            <h2>Войдите в аккаунт, чтобы увидеть свою статистику</h2>
+            <p>Персональные данные доступны только авторизованным пользователям.</p>
+            <button class="login-btn" onclick="window.location.href='/login'">Перейти к авторизации</button>
+        </div>
+    </div>
+
+    <div id="auth-view" style="display: none;">
+        <div class="user-header">
+            <h2>Ваша статистика, <span id="user-nickname">Sherlock</span></h2>
+            <button id="logout-btn" class="logout-btn-header">Выйти</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stats-card rank-card">
+                <h3>Одиночная очередь</h3>
+                <img src="https://opgg-static.akamaized.net/images/medals_new/emerald.png" alt="Emerald Rank" class="rank-img">
+                <div class="rank-text">
+                    <p class="rank-title">EMERALD II</p>
+                    <p>72 LP / 20W 13L</p>
+                    <p class="winrate">Винрейт: <span style="color: #10b981;">60.6%</span></p>
+                </div>
+            </div>
+
+            <div class="stats-card general-stats">
+                <h3>Мастерство</h3>
+                <div class="stat-row">
+                    <span>Общий счет мастерства</span>
+                    <span class="stat-value">1,019</span>
+                </div>
+                <div class="stat-row">
+                    <span>Очки чемпионов (всего)</span>
+                    <span class="stat-value">6,807,756</span>
+                </div>
+                <div class="stat-row">
+                    <span>Место в ладдере (RU)</span>
+                    <span class="stat-value">#9,639</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="best-champions">
+            <h3>Лучшие чемпионы (Мастерство)</h3>
+            <div class="champ-mini-list">
+                <div class="champ-item">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Jinx.png" alt="Jinx">
+                    <div class="champ-details">
+                        <p><strong>Jinx</strong></p>
+                        <p>449,345 pts (Ур. 43)</p>
+                    </div>
+                </div>
+                <div class="champ-item">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Jhin.png" alt="Jhin">
+                    <div class="champ-details">
+                        <p><strong>Jhin</strong></p>
+                        <p>334,435 pts (Ур. 33)</p>
+                    </div>
+                </div>
+                <div class="champ-item">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/Yasuo.png" alt="Yasuo">
+                    <div class="champ-details">
+                        <p><strong>Yasuo</strong></p>
+                        <p>276,193 pts (Ур. 26)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+</body>
+</html>

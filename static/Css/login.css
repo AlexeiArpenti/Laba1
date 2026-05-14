@@ -1,0 +1,105 @@
+/* Общий сброс, чтобы отступы считались правильно */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #010a13; /* Глубокий темный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Контейнер для центрирования всего блока на странице */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+/* Внешняя рамка с золотым свечением (как на твоем скрине) */
+.auth-box {
+    background: rgba(1, 10, 19, 0.95);
+    border: 1px solid #c8aa6e;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(200, 170, 110, 0.1);
+    position: relative;
+}
+
+/* Логотип над формой */
+.auth-logo {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.auth-box h2 {
+    color: #c8aa6e;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+/* Поля ввода: теперь они точно не вылезут за границы */
+.auth-box input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    background: #1e2328;
+    border: 1px solid #5b5a56;
+    color: #f0e6d2;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.auth-box input:focus {
+    border-color: #c8aa6e;
+    outline: none;
+    background: #2a2f35;
+}
+
+/* Кнопка в стиле League of Legends */
+.auth-box button {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #c8aa6e;
+    color: #c8aa6e;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.auth-box button:hover {
+    background: #c8aa6e;
+    color: #010a13;
+    box-shadow: 0 0 15px rgba(200, 170, 110, 0.4);
+}
+
+/* Ссылки и текст внизу */
+.auth-box p {
+    margin-top: 25px;
+    color: #a0a5b1;
+    font-size: 0.85rem;
+}
+
+.auth-box a {
+    color: #00bcda; /* Синий акцент для ссылок */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-box a:hover {
+    text-decoration: underline;
+}

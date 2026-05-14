@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>League of Legends - Режимы игры</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/lolicon.png') }}" type="image/png">
+    <link rel="stylesheet" href="static/Css/style.css">
+    <link rel="stylesheet" href="static/Css/maps.css">
+</head>
+<body>
+
+<header>
+    <h1>Режимы игры</h1>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/characters">Персонажи</a>
+        <a href="/stats">Статистика</a>
+        <a href="/maps">Режимы игры</a>
+        <a href="/tierlist">Тир лист</a>
+    </nav>
+</header>
+
+<main class="content-container">
+    <section class="modes-grid">
+        
+        <div class="mode-card">
+            <img src="https://cdn2.unrealengine.com/a-beginner-s-guide-to-league-of-legends-map-1440x950-6f2b6c9b0455.png" alt="Summoner's Rift">
+            <div class="mode-info">
+                <h3>Ущелье призывателей (5v5)</h3>
+                <p>Классический соревновательный режим. Две команды сражаются на трех линиях и в лесу. Цель — уничтожить вражеский Нексус.</p>
+                <ul>
+                    <li><strong>Продолжительность:</strong> 25–40 мин.</li>
+                    <li><strong>Карта:</strong> Ущелье призывателей</li>
+                    <li><strong>Выбор:</strong> Свободный или Драфт</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mode-card">
+            <img src="https://nexus.leagueoflegends.com/wp-content/uploads/2019/07/05_ARAM_l9h6z08kw5qc60mvsrxu.jpg" alt="ARAM">
+            <div class="mode-info">
+                <h3>ARAM (All Random All Mid)</h3>
+                <p>Все игроки получают случайных чемпионов и сражаются на одной узкой линии. Никакого леса, только чистый командный бой.</p>
+                <ul>
+                    <li><strong>Продолжительность:</strong> 15–20 мин.</li>
+                    <li><strong>Карта:</strong> Воющая бездна</li>
+                    <li><strong>Выбор:</strong> Случайный</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mode-card">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/fc9a0cca66f8acd38c08dfd0f5aed45a1440f9d0-1280x720.jpg?accountingTag=TFT&auto=format&fit=fill&q=80&w=897" alt="TFT">
+            <div class="mode-info">
+                <h3>TFT (Teamfight Tactics)</h3>
+                <p>Автоматический баттлер. Вы собираете армию чемпионов, которые сражаются за вас. Важна стратегия и экономика, а не скорость реакции.</p>
+                <ul>
+                    <li><strong>Продолжительность:</strong> 30–40 мин.</li>
+                    <li><strong>Тип:</strong> Стратегия</li>
+                    <li><strong>Игроков:</strong> 8 (каждый сам за себя)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mode-card">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/5568f896b459de6eca8e27e0b3bebe091d0f5efd-1751x985.jpg?accountingTag=LoL&auto=format&fit=fill&q=80&w=888" alt="Arena">
+            <div class="mode-info">
+                <h3>Арена (2v2v2v2v2v2v2v2)</h3>
+                <p>Быстрый режим, где четыре команды по два человека сражаются в сериях коротких раундов с уникальными усилениями (аугментациями).</p>
+                <ul>
+                    <li><strong>Продолжительность:</strong> 10–20 мин.</li>
+                    <li><strong>Особенность:</strong> Аугментации</li>
+                </ul>
+            </div>
+        </div>
+
+<div class="mode-card">
+    <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/429e89ad2ab54c371a6a361c70c65b323b17d02e-1280x720.jpg?accountingTag=LoL&auto=format&fit=fill&q=80&w=888" alt="Rotating Game Modes">
+    <div class="mode-info">
+        <h3>Временные режимы (Events)</h3>
+        <p>Периодические события с уникальными правилами. Самый популярный — <strong>УРФ (URF)</strong>, где умения не тратят ману и имеют очень быструю перезарядку.</p>
+        <ul>
+            <li><strong>Режимы:</strong> УРФ, Один за всех, Штурм нексуса</li>
+            <li><strong>Статус:</strong> Доступны во время событий</li>
+        </ul>
+    </div>
+</div>
+
+    </section>
+</main>
+
+</body>
+</html>
